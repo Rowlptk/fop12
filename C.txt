@@ -1,0 +1,18 @@
+C Programming
+
+programming logic
+==> primitive
+logic 
+
+console based application
+
+codeblocks
+
+turboc++
+
+IDE ==> Integrated development Environment
+text editor ==> 
+
+
+
+

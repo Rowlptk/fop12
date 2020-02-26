@@ -1,0 +1,57 @@
+generals terms
+
+computer ==> input ==> process ==> output
+
+data ==> operations ==> inforamtion
+
+Programming ==> 1. browser
+2. url
+3. credential
+4. 
+
+programming language ==> C, C++, 
+JAVA, Python, ...
+
+Algorithm ==> Sequence of Steps/instructions
+
+Flowchart ==> Graphical Representation
+Symbols
+
+draw.io ==> online diagram software
+
+
+1. Basic
+2. Operators
+3. conditionals
+4. loop
+5. Array
+6. Strings
+7. Functions
+8. Structure
+9. File handling
+
+Suman Kumar sah
+Aadesh Jha
+Abnish Yadav
+Anmol Karki
+Samrat Rai
+Suman Khatri
+Samrat hona
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
