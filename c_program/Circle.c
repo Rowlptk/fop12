@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define PI 3.1415
 
-
+// P = 2*PI*r
 void main()
 {
     float d,r,A;
