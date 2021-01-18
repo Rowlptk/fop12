@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors | colors</title>
+    <style>
+        /* Element Selector */
+        /* rgb ==> 0-255, rgba ==> a is alpha ==> opacity ==> 0 to 1*/
+        body {
+            background-color: rgba(255,200,100, 0.5);
+        }
+        
+        /* class (.)*/
+        /* 140 standard color names */
+        .primary-heading {
+            color: tomato;
+        }
+
+        /* # is for ID */
+        #welcome {
+            background-color: #f4f4f4;
+        }
+
+        /* Multiple Selector */
+        #welcome, #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Nested Selector */
+        #welcome p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint et adipisci quasi veritatis temporibus magni, quibusdam autem, quas maxime, hic corporis! Beatae vero corrupti quidem?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nihil ipsa non quidem omnis eius natus odit optio minus impedit, harum architecto eligendi quia possimus.</p>
+    </div>
+</body>
+</html>
