@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .box {
+            background: white;
+            width: 100px;
+            height: 100px;
+            margin: 200px auto;
+            /*
+            transition-property: all;
+            transition-duration: 30s;
+            transition-delay: 1s;
+            transition-timing-function: ease;*/
+            transition: all 5s linear 100ms;
+        }
+        .box:hover {
+            background-color: red;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+
+        .btn {
+            width: 100px;
+            transition: all 1s ease-in-out;
+        }
+        .btn:hover {
+            width: 300px;
+            padding: 10px;
+            background: #49c1a2;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <button class="btn">Click Me</button>
+
+</body>
+</html>
