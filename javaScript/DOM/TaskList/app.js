@@ -2,9 +2,55 @@
 const form = document.querySelector('#task-form');
 const taskInput = document.querySelector('#task');
 const taskList = document.querySelector('.collection');
+const clearBtn = document.querySelector('.clear-tasks');
+const filter = document.querySelector('#filter');
+
+// call all event Listeners
+loadEventListeners();
+
+// Load all event Listeners
+function loadEventListeners() {
+    // add task event
+    form.addEventListener('submit', addTask);
+    // remove task event
+    taskList.addEventListener('click', removeTask);
+    // clear tasks event
+    clearBtn.addEventListener('click', clearTasks);
+    // filter task event
+    filter.addEventListener('keyup', filterTasks);
+}
+
+// filter Tasks
+function filterTasks(e) {
+    const text = e.target.value.toLowerCase();
+    const li = document.querySelectorAll('.collection-item');
+    li.forEach(function(task) {
+        const item = task.firstChild.textContent.toLowerCase();
+        if(item.indexOf(text) != -1) {
+            task.style.display = 'block';
+        } 
+        else {
+            task.style.display = 'none';
+        }
+    })
+}
 
 
-form.addEventListener('submit', addTask);
+
+// clear Tasks
+function clearTasks() {
+    taskList.innerHTML = '';
+}
+
+// remove task
+function removeTask(e) {
+    if(e.target.classList.contains('fa-remove')) {
+        if(confirm('Are you Sure?')) {
+            e.target.parentElement.parentElement.remove();
+        }
+    }
+}
+
 
 // Add Task
 function addTask(e) {
