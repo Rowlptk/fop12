@@ -36,7 +36,6 @@ function filterTasks(e) {
 }
 
 
-
 // clear Tasks
 function clearTasks() {
     taskList.innerHTML = '';

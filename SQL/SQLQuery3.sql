@@ -39,6 +39,3 @@ insert into school(name,contact,mark)
 values('Thanos3',9801200115,12)
 
 select * from school
-
-
-Fk and pk
